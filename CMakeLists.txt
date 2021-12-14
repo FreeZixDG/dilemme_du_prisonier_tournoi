@@ -3,4 +3,4 @@ project(dilemme_du_prisonier_tournoii)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(dilemme_du_prisonier_tournoii main.cpp Player.cpp Player.h)
+add_executable(dilemme_du_prisonier_tournoii main.cpp lib/Player.cpp lib/Player.h)
