@@ -9,15 +9,18 @@
 class Player
 {
 private:
-    bool choice;
-    int bank;
+    bool this_choice; // 1 = trust, 0 = betray
+    int this_bank;
 
 public:
     Player();
     bool getChoice() const;
     int getBank() const;
 
+    void play_against(Player& opponent);
+
     void setChoice(bool choice);
+    void addBank(int value);
 
 };
 
