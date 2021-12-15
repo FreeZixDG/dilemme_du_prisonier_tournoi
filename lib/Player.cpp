@@ -42,4 +42,10 @@ void Player::StrategyAlwaysTrust() { this_choice = true; }
 
 void Player::StrategyAlwaysBetray() { this_choice = false; }
 
-
+void Player::play_n_games(Player &opponent, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        Player::play_against(opponent);
+    }
+}

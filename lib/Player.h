@@ -2,8 +2,8 @@
 // Created by MyPC on 14-Dec-21.
 //
 
-#ifndef DILEMME_DU_PRISONIER_TOURNOII_PLAYER_H
-#define DILEMME_DU_PRISONIER_TOURNOII_PLAYER_H
+#ifndef DILEMME_DU_PRISONIER_TOURNOI_PLAYER_H
+#define DILEMME_DU_PRISONIER_TOURNOI_PLAYER_H
 
 class Player
 {
@@ -18,6 +18,7 @@ public:
 
 
     void play_against(Player& opponent);
+    void play_n_games(Player& opponent, int n);
     void addBank(int value);
 
     void setChoice(bool choice);
@@ -30,4 +31,4 @@ public:
 };
 
 
-#endif //DILEMME_DU_PRISONIER_TOURNOII_PLAYER_H
+#endif //DILEMME_DU_PRISONIER_TOURNOI_PLAYER_H
