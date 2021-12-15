@@ -6,11 +6,12 @@
 
 Player::Player() : this_bank(0), this_choice() {}
 
-inline const int& Player::getBank() const { return this_bank; }
 
-inline const bool& Player::getChoice() const { return this_choice; }
+const int &Player::getBank() const { return this_bank; }
 
-void Player::setChoice(bool choice) { this_choice = choice; }
+
+const bool &Player::getChoice() const { return this_choice; }
+
 
 void Player::play_against(Player& opponent)
 {
@@ -31,4 +32,14 @@ void Player::play_against(Player& opponent)
     }
 }
 
+
 void Player::addBank(int value) { this_bank += value; }
+
+
+void Player::setChoice(bool choice) { this_choice = choice; }
+
+void Player::StrategyAlwaysTrust() { this_choice = true; }
+
+void Player::StrategyAlwaysBetray() { this_choice = false; }
+
+

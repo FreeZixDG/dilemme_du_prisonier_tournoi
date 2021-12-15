@@ -5,7 +5,6 @@
 #ifndef DILEMME_DU_PRISONIER_TOURNOII_PLAYER_H
 #define DILEMME_DU_PRISONIER_TOURNOII_PLAYER_H
 
-
 class Player
 {
 private:
@@ -14,13 +13,19 @@ private:
 
 public:
     Player();
-    inline const bool& getChoice() const;
-    inline const int& getBank() const;
+    const bool& getChoice() const;
+    const int& getBank() const;
+
 
     void play_against(Player& opponent);
+    void addBank(int value);
 
     void setChoice(bool choice);
-    void addBank(int value);
+
+    void StrategyAlwaysTrust();
+    void StrategyAlwaysBetray();
+
+
 
 };
 

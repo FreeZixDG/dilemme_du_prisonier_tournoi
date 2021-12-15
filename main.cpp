@@ -6,15 +6,15 @@ int main() {
     Player a;
     Player b;
 
-    a.setChoice(true);
-    b.setChoice(true);
+    a.StrategyAlwaysTrust();
+    b.StrategyAlwaysBetray();
 
     a.play_against(b);
     a.play_against(b);
     a.play_against(b);
 
-    printf("Player A: choice = %d, bank = %d \n", a.getChoice(), a.getBank());
-    printf("Player B: choice = %d, bank = %d \n", b.getChoice(), b.getBank());
+    printf("Player A: strategy = %s, bank = %d \n", a.getChoice(), a.getBank());
+    printf("Player B: strategy = %s, bank = %d \n", b.getStrategy(), b.getBank());
     return 0;
 }
 
