@@ -6,9 +6,9 @@
 
 Player::Player() : this_bank(0), this_choice() {}
 
-int Player::getBank() const { return this_bank; }
+inline const int& Player::getBank() const { return this_bank; }
 
-bool Player::getChoice() const { return this_choice; }
+inline const bool& Player::getChoice() const { return this_choice; }
 
 void Player::setChoice(bool choice) { this_choice = choice; }
 

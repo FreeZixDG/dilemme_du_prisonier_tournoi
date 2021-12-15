@@ -14,8 +14,8 @@ private:
 
 public:
     Player();
-    bool getChoice() const;
-    int getBank() const;
+    inline const bool& getChoice() const;
+    inline const int& getBank() const;
 
     void play_against(Player& opponent);
 
